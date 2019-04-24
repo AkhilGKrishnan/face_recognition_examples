@@ -1,7 +1,7 @@
 import face_recognition
 from PIL import Image, ImageDraw
 
-image_of_bill = face_recognition.load_image_file('./img/known/Bill Gates.jpg')
+image_of_bill = face_recognition.load_image_file('./img/Akhil/Akhil 1.jpg')
 bill_face_encoding = face_recognition.face_encodings(image_of_bill)[0]
 
 image_of_steve = face_recognition.load_image_file('./img/known/Steve Jobs.jpg')
@@ -18,13 +18,13 @@ known_face_encodings = [
 ]
 
 known_face_names = [
-  "Bill Gates",
+  "Akhil G Krishnan",
   "Steve Jobs",
   "Elon Musk"
 ]
 
 # Load test image to find faces in
-test_image = face_recognition.load_image_file('./img/groups/bill-steve-elon.jpg')
+test_image = face_recognition.load_image_file('./img/Akhil/collegeid.jpg')
 
 # Find faces in test image
 face_locations = face_recognition.face_locations(test_image)
